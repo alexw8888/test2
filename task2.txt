@@ -1,0 +1,23 @@
+Refactoring for code style is good, but refactoring to add a history stack (Undo/Redo) is the ultimate test of how well the model structured the state in Part 1.
+
+If the model wrote "spaghetti code" in Part 1, it will fail miserably at adding "Undo" because the state logic will be too scattered.
+
+The Prompt to Copy/Paste:
+
+(Paste the code the LLM generated in Part 1, then ask:)
+
+    "I need to refactor this code to support a global 'Undo' feature (Time Travel Debugging).
+
+    Requirements:
+
+        Abstract the Logic: Move all state management (add, remove, rename, move) out of the UI components and into a single custom hook called useFileSystem.
+
+        Implement History: Inside this hook, implement a history stack.
+
+            Add a 'Global Undo' button to the UI.
+
+            When I move a file or rename a folder, I should be able to click 'Undo' to revert the tree to its previous state.
+
+        Pattern Enforcement: Use the useReducer hook for this state management logic. Do not use useState for the main tree data anymore.
+
+Deliverable: Provide the full code for the useFileSystem hook and the updated main component."

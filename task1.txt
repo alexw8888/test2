@@ -1,0 +1,52 @@
+Project: The "Virtual OS" File Manager Context: You are building a standalone Single Page Application (SPA) that simulates an operating system's file manager in the browser.
+
+The Prompt to Copy/Paste:
+
+    "Build a React application using TypeScript that simulates a file manager.
+
+    1. The Data Source (In-Memory Simulation):
+
+        Do NOT connect to a real backend or file system.
+
+        Initialize the app state with this exact JSON object:
+        JSON
+
+    const initialData = [
+      { id: "1", name: "Documents", type: "folder", children: [
+          { id: "2", name: "Resume.pdf", type: "file" },
+          { id: "3", name: "Notes", type: "folder", children: [] }
+      ]},
+      { id: "4", name: "Photos", type: "folder", children: [
+          { id: "5", name: "Vacation", type: "folder", children: [
+              { id: "6", name: "beach.png", type: "file" }
+          ]}
+      ]}
+    ];
+
+2. Core Features:
+
+    Recursive Display: Render the folders and files. Folders must be collapsible.
+
+    Selection: Clicking a 'file' should verify that it is active (highlight it).
+
+    CRUD Actions:
+
+        Add: A button to create a new folder/file inside the currently selected folder.
+
+        Delete: Remove the selected item.
+
+        Rename: Double-click an item to rename it in place.
+
+3. The "Hard" Requirement (Drag and Drop):
+
+    Implement Drag and Drop using the native HTML5 API.
+
+    I must be able to drag beach.png (id: 6) out of its nested folder and drop it into the root Documents folder.
+
+    The data structure must update correctly to reflect this new parent-child relationship.
+
+4. Constraints:
+
+    Use functional components and Hooks only.
+
+    Do not use any external UI libraries (like Material UI) or logic libraries (like Redux or Lodash). Write the logic in raw JavaScript/TypeScript."
