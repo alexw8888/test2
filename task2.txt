@@ -1,11 +1,3 @@
-Refactoring for code style is good, but refactoring to add a history stack (Undo/Redo) is the ultimate test of how well the model structured the state in Part 1.
-
-If the model wrote "spaghetti code" in Part 1, it will fail miserably at adding "Undo" because the state logic will be too scattered.
-
-The Prompt to Copy/Paste:
-
-(Paste the code the LLM generated in Part 1, then ask:)
-
     "I need to refactor this code to support a global 'Undo' feature (Time Travel Debugging).
 
     Requirements:
