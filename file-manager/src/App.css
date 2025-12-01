@@ -1,0 +1,63 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  max-width: 800px;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.toolbar {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+button:hover {
+  background: #e9e9e9;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.file-browser {
+  border: 1px solid #ddd;
+  padding: 10px;
+  min-height: 300px;
+  border-radius: 4px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.instructions {
+  margin-top: 10px;
+  font-size: 0.8em;
+  color: #666;
+}
